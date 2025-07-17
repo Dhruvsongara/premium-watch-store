@@ -1,0 +1,537 @@
+/* Font and Base Reset */
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  background: black;
+}
+
+#auth-btn {
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 16px;
+  position: relative;
+  bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  display: inline-block;
+}
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+nav {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #logo2 {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#Website_Name {
+  position: relative;
+  right: 130px;
+  color: white;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+#carticon{
+  margin-right: 35px;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 70px;
+  position: relative;
+  right: -1px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.icon1 {
+  font-size: 30px;
+  position: relative;
+  right: -130px;
+  color: green;
+}
+
+.icon1:hover {
+  color: green;
+  cursor: pointer;
+}
+
+#signinid {
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 16px;
+  position: relative;
+  bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  display: inline-block;
+}
+
+#signinid:hover {
+  background-color: green;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+#signinid:active {
+  background-color: green;
+  transform: translateY(0);
+}
+
+/* About Section */
+
+#FIRSTABOUT {
+  position: relative;
+  top: 130px;
+  left: 82px;
+
+}
+
+#firstAbouth2 {
+  color: green;
+}
+
+#firstAboutp {
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  color: #555555;
+}
+
+#firstAboutp2 {
+  width: 500px;
+  font-size: 15px;
+  color: white;
+}
+
+#firstAboutimg {
+  height: 430px;
+  width: 450px;
+  object-fit: cover;
+  position: relative;
+  bottom: 350px;
+  left: 680px;
+  border-radius: 100%;
+}
+
+#aboutappname {
+  color: green;
+  font-weight: bold;
+}
+#aboutappname1 {
+  color: green;
+  font-weight: bold;
+}
+
+#secondAbouth2 {
+  color: green;
+}
+
+#secondAboutp {
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  color: #555555;
+}
+
+#secondAboutp2 {
+  width: 500px;
+  font-size: 15px;
+  color: white;
+}
+
+#secondAboutimg {
+  height: 430px;
+  width: 450px;
+  object-fit: cover;
+  position: relative;
+  bottom: 50px;
+  left: -20px;
+  border-radius: 100%;
+}
+
+.secondAboutdiscription {
+  position: relative;
+  left: 600px;
+  bottom: 435px;
+}
+
+#aboutappname2 {
+  color: green;
+  font-weight: bold;
+}
+#aboutappname3 {
+  color: green;
+  font-weight: bold;
+}
+#aboutappname4 {
+  color: green;
+  font-weight: bold;
+}
+
+#SECONDABOUT {
+  position: relative;
+  top: -290px;
+  left: 7px;
+}
+
+#THIRDABOUT {
+  position: relative;
+  top: -580px;
+  left: 20px;
+}
+
+#thirdAbouth2 {
+  color: green;
+}
+
+#thirdAboutp {
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  color: #555555;
+}
+
+#thirdAboutp2 {
+  width: 500px;
+  font-size: 15px;
+  color: white;
+}
+
+#thirdAboutimg1 {
+  height: 230px;
+  width: 230px;
+  object-fit: cover;
+  position: relative;
+  bottom: 280px;
+  left: 600px;
+  border-radius: 100%;
+}
+#thirdAboutimg2 {
+  height: 230px;
+  width: 230px;
+  object-fit: cover;
+  position: relative;
+  bottom: 280px;
+  left: 620px;
+  border-radius: 100%;
+}
+
+#aboutappname5 {
+  color: green;
+  font-weight: bold;
+}
+#aboutappname6 {
+  color: green;
+  font-weight: bold;
+}
+
+#newslatterimg {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  bottom: 55px;
+  border-radius: 100%;
+}
+
+#newsletterh2 {
+  font-size: 30px;
+  position: relative;
+  bottom: 16px;
+  color: #555555;
+}
+
+.newsletter {
+  display: flex;
+  position: relative;
+  bottom: 620px;
+  left: 160px;
+  gap: 5rem;
+}
+
+#newsletterspan {
+  color: white;
+  font-weight: bold;
+}
+
+#newsletterp {
+  width: 300px;
+  font-size: 17px;
+  opacity: 0.6;
+  position: relative;
+  bottom: 14px;
+  font-weight: 500;
+  color:#555555;
+}
+
+#newsletteremail {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#newsletteremail:focus {
+  border-color: #218838;
+}
+
+#newsletterbutton {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+#newsletterbutton:hover {
+  background-color: #218838;
+}
+
+#newsletterform {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer Section */
+
+#logo2Footer {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
+.FOOter {
+  position: relative;
+  top: -500px;
+}
+
+#websiteid {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  bottom: 52px;
+  left: 80px;
+  cursor: pointer;
+}
+
+#website_desc {
+  width: 380px;
+  opacity: 0.8;
+  font-size: 17px;
+  position: relative;
+  bottom: 20px;
+  color: #555555;
+}
+
+#premiumwatchstorespanfooter {
+  color: green;
+  font-weight: bold;
+}
+
+.footer1 {
+  position: relative;
+  left: 50px;
+  top: 130px;
+}
+
+.footer2 {
+  position: relative;
+  left: 610px;
+  bottom: 50px;
+}
+
+#footerh3 {
+  color: white;
+}
+
+.footerh3p {
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  left: -7px;
+  color:#555555;
+}
+
+.footerh3p:hover {
+  color: white;
+}
+
+#Footerh3 {
+  color: white;
+}
+
+.footer3 {
+  position: relative;
+  bottom: 361px;
+  left: 900px;
+}
+
+.footerh2p {
+  margin: 10px;
+  position: relative;
+  left: -8px;
+  cursor: pointer;
+  color:#555555;
+}
+
+.footerh2p:hover {
+  color: green;
+}
+.fb {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.fb:hover {
+  background-color: #1877f2; /* Facebook Blue */
+  color: white;
+}
+
+.ig {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.ig:hover {
+  background-color: #e4405f; /* Instagram Gradient Pink */
+  color: white;
+}
+
+.wp {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.wp:hover {
+  background-color: #25d366; /* WhatsApp Green */
+  color: white;
+}
+
+.yt {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.yt:hover {
+  background-color: #ff0000; /* YouTube Red */
+  color: white;
+}
+
+.ld {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.ld:hover {
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: white;
+}
+
+.footer4 {
+  position: relative;
+  left: 900px;
+  bottom: 340px;
+}
+
+#footer5p {
+  position: relative;
+  bottom: 120px;
+  left: 50px;
+  cursor: pointer;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 120px;
+  left: 650px;
+}

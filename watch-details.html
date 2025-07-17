@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Details | Watch Price</title>
+    <link rel="stylesheet" href="./css/watch-details.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="watchApp" ng-controller="watchDetailsController">
+    <section id="Navbar">
+      <nav>
+        <img
+          id="LogoImg"
+          src="assets/logo2.jpg"
+          alt="Premium Watch Store"
+        />
+        <h1 id="Website_Name">Premium Watch Store</h1>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" id="cartLink"><i class="fa-solid fa-cart-shopping icon1"></i></a></li>
+        </ul> 
+  
+       <a href="" ng-click="handleAuth()" id="auth-link">
+        <button id="auth-btn">{{ isLoggedIn ? 'Logout' : 'Sign In' }}</button>
+      </a>
+      </nav>
+    </section>
+    <div class="watch-detail-container" ng-if="watch">
+      <div class="watchImage">
+        <img class="watch-image" ng-src="{{watch.image}}" alt="{{watch.name}}" />
+      </div>
+      <div class="otherdetails">
+        <h2>{{watch.name}}</h2>
+        <p class="watch-price">₹ {{watch.price}}</p>
+        <p class="watch-description">{{watch.description}}</p>
+        <p class="watch-category">{{watch.category}}</p>
+        <button class="gobtn" onclick="window.history.back()">Go Back</button>
+        <button class="addbtn" ng-click="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+
+    <section class="footeR">
+      <!-- Footer Section -->
+      <div class="footer1">
+        <img
+          src="./assets/logo.png"
+          alt="premiumwatchstore"
+          id="logo2Footer"
+        />
+        <h3 id="websiteid">premium watch store</h3>
+        <p id="website_desc">
+          Hiranandani Building , 3rd floor, near powai lake
+          Mumbai - 400 093, Maharashtra, India.
+        </p>
+      </div>
+      <div class="footer2">
+        <h3 id="footerh3">Quick Links</h3>
+        <p class="footerh3p">SHOP</p>
+        <p class="footerh3p">PRODUCTS</p>
+        <p class="footerh3p">SERVICES</p>
+        <p class="footerh3p">BRANDS</p>
+        <p class="footerh3p">WHO WE ARE</p>
+        <p class="footerh3p">CONTACT US</p>
+        <p class="footerh3p">BROCHURE</p>
+        <p class="footerh3p">SITEMAP</p>
+      </div>
+      <div class="footer3">
+        <h3 id="Footerh3">Contact Us</h3>
+        <p class="footerh2p"><b>Email:</b> support@premiumwatchstoreveryapp.com</p>
+        <p class="footerh2p"><b>Telephone:</b> +1 234 567 890</p>
+      </div>
+      <div class="footer4">
+        <i class="fa-brands fa-facebook-f fb"></i>
+        <i class="fa-brands fa-instagram ig"></i>
+        <i class="fa-brands fa-whatsapp wp"></i>
+        <i class="fa-brands fa-youtube yt"></i>
+        <i class="fa-brands fa-linkedin ld"></i>
+      </div>
+      <div class="footer5">
+        <p id="footer5p">Privacy Policy | Terms & Conditions | Disclaimers</p>
+        <p id="copyright">
+          Copyright © 2025 premiumwatchstore | Watch India Pvt. Ltd. All rights
+          reserved.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | Premium Watch Store</title>
+    <link rel="stylesheet" href="css/Signin.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="watchApp" ng-controller="authController">
+    <div class="signin-container">
+      <div class="signin-left">
+        <h2>Create New Account ⌚</h2>
+        <form ng-submit="signin()" class="signin-form">
+          <div class="input-group">
+            <input id="inputname"
+              type="text"
+              ng-model="user.name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input id="inputname"
+              type="email"
+              ng-model="user.email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input id="inputname"
+              type="password"
+              ng-model="user.password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn">Sign In</button>
+          <a href="login.html" class="link">Already have an account? Login</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  background: black;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+/* Navbar Section */
+
+nav {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #logo2 {
+  height: 60px;
+  width: 70px;
+  cursor: pointer;
+}
+
+#Website_Name {
+  position: relative;
+  right: 135px;
+  color: white;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 70px;
+  position: relative;
+  right: -1px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.icon1 {
+  font-size: 30px;
+  position: relative;
+  right: -130px;
+  color: green;
+}
+
+.icon1:hover {
+  color: green;
+  cursor: pointer;
+}
+
+#auth-btn {
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 16px;
+  position: relative;
+  bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  display: inline-block;
+}
+
+#signinid:hover {
+  background-color: green;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+#signinid:active {
+  background-color: green;
+  transform: translateY(0);
+}
+
+.watch-detail-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: blank;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  right: 50px;
+  flex-direction: row;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.otherdetails {
+  position: relative;
+  right: 170px;
+  top: 47px;
+}
+
+.watch-image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+h2 {
+  font-size: 24px;
+  color: white;
+  position: relative;
+  right: 123px;
+  margin-bottom: 10px;
+}
+
+.watch-description {
+  font-size: 14px;
+  color: #555;
+  position: relative;
+  left: 170px;
+  bottom: 20px;
+  width: 700px;
+  text-align: justify;
+}
+
+.watch-category {
+  font-weight: bold;
+  color: green; /* Green Theme */
+  text-transform: uppercase;
+  margin-top: 10px;
+  position: relative;
+  right: 147px;
+  bottom: 23px;
+}
+
+.watch-price {
+  font-size: 19px;
+  position: relative;
+  right: 160px;
+  bottom: 13px;
+  font-weight: bold;
+  color: green; /* Green Theme */
+  margin: 15px 0;
+}
+
+.gobtn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  right: 49px;
+  bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gobtn:first-of-type {
+  background-color: #ddd;
+  color: #333;
+}
+
+.gobtn:first-of-type:hover {
+  background-color: #bbb;
+}
+
+.gobtn:last-of-type {
+  background-color: green; /* Green Theme */
+  color: white;
+}
+
+.gobtn:last-of-type:hover {
+  background-color: #219150;
+}
+
+.addbtn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  right: 50px;
+  bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addbtn:first-of-type {
+  background-color: #ddd;
+  color: #333;
+}
+
+.addbtn:first-of-type:hover {
+  background-color: #bbb;
+}
+
+.addbtn:last-of-type {
+  background-color: green; /* Green Theme */
+  color: white;
+}
+
+.addbtn:last-of-type:hover {
+  background-color: green;
+}
+/* Footer Section */
+
+#logo2Footer {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
+.footeR {
+  position: relative;
+  top: -20px;
+}
+
+#websiteid {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  bottom: 52px;
+  left: 80px;
+  cursor: pointer;
+}
+
+#website_desc {
+  width: 380px;
+  opacity: 0.8;
+  font-size: 17px;
+  position: relative;
+  bottom: 20px;
+  color:#555555
+}
+
+#premiumwatchstorespanfooter {
+  color: green;
+  font-weight: bold;
+}
+
+.footer1 {
+  position: relative;
+  left: 50px;
+  top: 130px;
+}
+
+.footer2 {
+  position: relative;
+  left: 610px;
+  bottom: 50px;
+}
+
+#footerh3 {
+  color: white;
+}
+
+.footerh3p {
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  left: -7px;
+  color:#555555;
+}
+
+.footerh3p:hover {
+  color: white;
+}
+
+#Footerh3 {
+  color: white;
+}
+
+.footer3 {
+  position: relative;
+  bottom: 361px;
+  left: 900px;
+}
+
+.footerh2p {
+  margin: 10px;
+  position: relative;
+  left: -8px;
+  cursor: pointer;
+  color:#555555;
+}
+
+.footerh2p:hover {
+  color: white;
+}
+.fb {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.fb:hover {
+  background-color: #1877f2; /* Facebook Blue */
+  color: white;
+}
+
+.ig {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.ig:hover {
+  background-color: #e4405f; /* Instagram Gradient Pink */
+  color: white;
+}
+
+.wp {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.wp:hover {
+  background-color: #25d366; /* WhatsApp Green */
+  color: white;
+}
+
+.yt {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.yt:hover {
+  background-color: #ff0000; /* YouTube Red */
+  color: white;
+}
+
+.ld {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.ld:hover {
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: white;
+}
+
+.footer4 {
+  position: relative;
+  left: 900px;
+  bottom: 340px;
+}
+
+#footer5p {
+  position: relative;
+  bottom: 120px;
+  left: 50px;
+  cursor: pointer;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 120px;
+  left: 650px;
+}
+
+#cartLink{
+  margin-right: 25px;
+}

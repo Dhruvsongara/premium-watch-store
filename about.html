@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Premium watch store</title>
+    <link rel="stylesheet" href="css/About.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="watchApp" ng-controller="watchController">
+    <section id="Navbar">
+      <nav>
+        <img id="LogoImg" src="assets/logo2.jpg" alt="PrimeTime" />
+        <h1 id="Website_Name">Premium watch store</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <i class="fa-solid fa-cart-shopping icon1" id="carticon"></i>
+
+        <a href="" ng-click="handleAuth()" id="auth-link">
+          <button id="auth-btn">{{ isLoggedIn ? 'Logout' : 'Sign In' }}</button>
+        </a>
+      </nav>
+    </section>
+
+    <section id="about">
+      <div id="FIRSTABOUT">
+        <div class="firstAboutdiscription">
+          <h2 id="firstAbouth2"><i>PrimeTime Luxury Watches</i></h2>
+          <p id="firstAboutp">Crafting Moments of Excellence</p>
+          <p id="firstAboutp2">Welcome to <span id="aboutappname">PrimeTime</span> – where timeless craftsmanship meets contemporary luxury. We are more than a watch retailer; we are curators of heritage, innovation, and elegance. 
+          At <span id="aboutappname1">PrimeTime</span>, every timepiece tells a story — of precision, prestige, and passion. Explore the world's most celebrated brands like Rolex, Omega, Rado, Diesel, and Fossil, brought together under one prestigious platform, designed for the discerning few who understand that time is the ultimate luxury.</p>
+        </div>
+        <div class="firstAboutimage">
+          <img id="firstAboutimg" src="assets/rolex1.jpeg" alt="FirstAboutImage" />
+        </div>
+
+        <div id="SECONDABOUT">
+          <div class="secondAboutimage">
+            <img id="secondAboutimg" src="assets/arnold & son.jpg" alt="SecondAbout" />
+          </div>
+          <div class="secondAboutdiscription">
+            <h2 id="secondAbouth2"><i>Modern Elegance</i></h2>
+            <p id="secondAboutp">Defining Timeless Style</p>
+            <p id="secondAboutp2">At <span id="aboutappname2">PrimeTime</span>, luxury isn’t just about price — it's about passion, detail, and innovation. Our carefully curated collection represents the finest examples of Swiss precision, Italian elegance, and modern design aesthetics.
+            We partner directly with renowned watchmakers, ensuring authenticity, exclusivity, and unmatched quality. Whether you’re seeking a bold Diesel chronograph, a refined Rado masterpiece, a legendary Omega classic, or an iconic Rolex statement — <span id="aboutappname3">PrimeTime</span> is your ultimate destination. Discover the art of timekeeping reimagined for today’s connoisseurs.</p>
+          </div>
+        </div>
+
+        <div id="THIRDABOUT">
+          <div class="thirdAboutdiscription">
+            <h2 id="thirdAbouth2"><i>Beyond Timekeeping</i></h2>
+            <p id="thirdAboutp">A Legacy That Lives On</p>
+            <p id="thirdAboutp2">Every watch from <span id="aboutappname5">PrimeTime</span> is a celebration of craftsmanship and innovation. Our selection transcends trends and moments — offering heirlooms that can be passed through generations.
+            From the adventurous spirit of Fossil to the timeless sophistication of Rolex, our watches are more than accessories — they are extensions of personality, ambition, and dreams. Experience a world without limits. Celebrate excellence, precision, and timeless beauty with <span id="aboutappname6">PrimeTime</span>.</p>
+          </div>
+          <div class="thirdAboutimage">
+            <img id="thirdAboutimg1" src="assets/cartier.jpg" />
+            <img id="thirdAboutimg2" src="assets/fossil.jpg" />
+          </div>
+        </div>
+
+        <div class="newsletter">
+          <div class="newsletterdiscription">
+            <h2 id="newsletterh2">Subscribe <br>To Our <span id="newsletterspan">Newsletter</span></h2>
+            <p id="newsletterp">Be the first to discover the newest arrivals, limited editions, and exclusive offers from the world of luxury watches.</p>
+            <input type="email" id="newsletteremail" placeholder="Enter your email address" required />
+            <button id="newsletterbutton">Subscribe</button>
+          </div>
+          <div class="newslatterimg">
+            <img id="newslatterimg" src="assets/newslattermail.jpg" alt="Newsletter" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="FOOter">
+      <div class="footer1">
+        <h3 id="websiteid">Premium Watch Store</h3>
+        <p id="website_desc">Hiranandani Building , 3rd floor, near powai lake, 
+          Mumbai - 400 093, Maharashtra, India.</p>
+      </div>
+      <div class="footer2">
+        <h3 id="footerh3">Quick Links</h3>
+        <p class="footerh3p">BRANDS</p>
+        <p class="footerh3p">COLLECTIONS</p>
+        <p class="footerh3p">SERVICES</p>
+        <p class="footerh3p">LIMITED EDITIONS</p>
+        <p class="footerh3p">ABOUT US</p>
+        <p class="footerh3p">CONTACT</p>
+        <p class="footerh3p">WARRANTY</p>
+        <p class="footerh3p">SITEMAP</p>
+      </div>
+      <div class="footer3">
+        <h3 id="Footerh3">Contact Us</h3>
+        <p class="footerh2p"><b>Email :</b> support@primetimewatches.com</p>
+        <p class="footerh2p"><b>Telephone :</b> +91 98765 43210</p>
+      </div>
+      <div class="footer4">
+        <i class="fa-brands fa-facebook-f fb"></i>
+        <i class="fa-brands fa-instagram ig"></i>
+        <i class="fa-brands fa-whatsapp wp"></i>
+        <i class="fa-brands fa-youtube yt"></i>
+        <i class="fa-brands fa-linkedin ld"></i>
+      </div>
+      <div class="footer5">
+        <p id="footer5p">Privacy Policy | Terms & Conditions | Legal Notice</p>
+        <p id="copyright">Copyright © 2025 PrimeTime Watches. All rights reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Food Delivery</title>
+    <link rel="stylesheet" href="css/About.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="App" ng-controller="foodController">
+    <section id="Navbar">
+      <nav>
+        <img
+          id="Foodeli_LogoImg"
+          src="assets/Foodeli_LogoImg.png"
+          alt="Foodeli"
+        />
+        <h1 id="Website_Name">Foodeli</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+  
+        <i class="fa-solid fa-cart-shopping icon1"></i>
+  
+        <a href="" ng-click="handleAuth()" id="auth-link">
+          <button id="auth-btn">{{ isLoggedIn ? 'Logout' : 'Sign In' }}</button>
+        </a>
+      </nav>
+    </section>
+   
+
+    <section id="about">
+      <div id="FIRSTABOUT">
+        <div class="firstAboutdiscription">
+          <h2 id="firstAbouth2"><i>Foodeli Delicious Food</i> </h2>
+          <p id="firstAboutp">Catering to your requirements</p>
+          <p id="firstAboutp2">Our store is more than just another average online retailer .We sell not only top quality foods , but give out customers a positive online shopping experience . Welcome to <span id="aboutappname">Foodeli</span> – your ultimate destination for food and only food ! We’re not just another delivery app; we’re a celebration of flavors , aromas , and the joy of eating .
+            At <span id="aboutappname1">Foodeli</span> , we believe food isn’t just fuel—it’s an experience , a comfort , and a way to connect . That’s why we’re dedicated exclusively to delivering the tastiest dishes from your favorite restaurants, straight to your doorstep. No distractions, no compromises—just great food, every time.</p>
+        </div>
+        <div class="firstAboutimage">
+        <img id="firstAboutimg" src="assets/about1.jpg" alt="FirstAboutImage" />
+        </div>
+
+        <div id="SECONDABOUT">
+          <div class="secondAboutimage">
+            <img id="secondAboutimg" src="assets/about2.jpg" alt="SecondAbout"/>
+          </div>
+          <div class="secondAboutdiscription">
+            <h2 id="secondAbouth2"><i>Modern design</i></h2>
+            <p id="secondAboutp">Catering to your requirements</p>
+            <p id="secondAboutp2">Welcome to <span id="aboutappname2">Foodeli</span> – where exceptional food meets extraordinary quality ! We take pride in connecting you with a curated selection of the finest restaurants , each handpicked to deliver an unforgettable dining experience .
+              Our platform isn’t just about food delivery — it’s about bringing the best culinary artistry to your doorstep . From local legends to award-winning establishments , we partner with restaurants that share our commitment to taste , quality , and innovation . With <span id="aboutappname3">Foodeli</span> , every order is a celebration of good food and great taste . So , whether it’s a casual lunch , a special dinner , or a grand event , trust us to bring the restaurant experience right to you .
+              Discover quality . Savor excellence . Experience the best with <span id="aboutappname4">Foodeli</span> . 🍽✨</p>
+              </div>
+           
+          </div>
+
+          <div id="THIRDABOUT">
+            <div class="thirdAboutdiscription">
+              <h2 id="thirdAbouth2"><i>Buffet Delicious</i></h2>
+              <p id="thirdAboutp">Goodness without borders</p>
+              <p id="thirdAboutp2">Step into a world of endless flavors and boundless delights ! At <span id="aboutappname5">Foodeli</span> , we bring you the ultimate buffet experience , where every bite is a journey across cuisines , cultures , and continents . From sizzling starters to decadent desserts , our buffet is a celebration of variety , freshness , and culinary craftsmanship . Whether you’re a fan of bold spices , hearty comfort food , or light and healthy options , we have something to satisfy every craving . With no borders to flavor or creativity , our buffet promises a dining experience that’s as diverse and exciting as your taste buds can handle . It’s more than a meal—it’s a feast of goodness for every occasion . Come hungry . Leave happy . Discover the joy of boundless dining with <span id="aboutappname6">Foodeli</span>. 🌏✨</p>
+          </div>
+                <div class="thirdAboutimage">
+                  <img id="thirdAboutimg1" src="assets/about3.jpg" />
+                  <img id="thirdAboutimg2" src="assets/about4.jpg" />
+                </div>
+            </div>
+
+            <div class="newsletter">
+              <div class="newsletterdiscription">
+                <h2 id="newsletterh2">Subscribe <br>To Our <span id="newsletterspan">Newsletter</span></h2>
+                <p id="newsletterp">Get weekly updates on the newest design stroies , case studies and tips right in your mailbox .</p>
+                <input type="email" id="newsletteremail" placeholder="Enter your email address" required />
+                <button id="newsletterbutton">Subscribe</button>
+              </div>
+              <div class="newslatterimg">
+                <img id="newslatterimg" src="assets/newslattermail.jpg" alt="Newsletter"/>
+              </div>
+            </div>
+        
+        </div>
+      </div>
+     
+    </section>
+
+    <section class="FOOter">
+      <div class="footer1">
+        <img src="./assets/Foodeli_LogoImg.png" alt="Foodeli_LogoImgFooter" id="Foodeli_LogoImgFooter">
+        <h3 id="websiteid">Foodeli</h3>
+        <p id="website_desc">Solitaire Corporate Park , 7th floor,Bldg. No.5 Chakala,Andheri-Kurla Road,Andheri ( East ), Mumbai - 400 093 , Maharashtra , Gujarat , India .</p>
+      </div>
+      <div class="footer2">
+        <h3 id="footerh3">Quick Links</h3>
+        <p class="footerh3p">SHOP</p>
+        <p class="footerh3p">PRODUCTS</p>
+        <p class="footerh3p">SERVICES</p>
+        <p class="footerh3p">RECIPES</p>
+        <p class="footerh3p">WHO WE ARE</p>
+        <p class="footerh3p">CONTACT US</p>
+        <p class="footerh3p">BROCHURE</p>
+        <p class="footerh3p">SITEMAP</p>
+      </div>
+      <div class="footer3">
+        <h3 id="Footerh3">Contact Us</h3>
+        <p class="footerh2p"><b>Email :</b> support@foodeliveryapp.com</p>
+        <p class="footerh2p"><b>Telephone : </b>+1 234 567 890</p>
+      </div>
+      <div class="footer4">
+        <i class="fa-brands fa-facebook-f fb"></i>
+        <i class="fa-brands fa-instagram ig"></i>
+        <i class="fa-brands fa-whatsapp wp"></i>
+        <i class="fa-brands fa-youtube yt"></i>
+        <i class="fa-brands fa-linkedin ld"></i>
+      </div>
+      <div class="footer5">
+        <p id="footer5p">Privacy Policy | Terms & Conditions | Disclaimers </p>
+        <p id="copyright">Copyright © 2025 Foodeli | Food Service India Pvt. Ltd.All rights reserved .</p>
+      </div>
+
+    </section>
+  </body>
+</html> -->

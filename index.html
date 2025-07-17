@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>watch Delivery App</title>
+    <link rel="stylesheet" href="css/Index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="watchApp" ng-controller="watchController">
+    <section id="Navbar">
+      <nav>
+        <img
+          id="LogoImg"
+          src="assets/logo2.jpg"
+          alt="Premium Watch Store"
+        />
+        <h1 id="Website_Name">Premium Watch Store</h1>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html"><i class="fa-solid fa-cart-shopping icon1"></i></a></li>
+        </ul> 
+  
+       <a href="" ng-click="handleAuth()" id="auth-link">
+        <button id="auth-btn">{{ isLoggedIn ? 'Logout' : 'Sign In' }}</button>
+      </a>
+      </nav>
+    </section>
+    
+    <section id="Hero">
+      <div id="leftside">
+        <p id="hp1">Claim Best Offer</p><br><p id="hp2">on premium<span id="hs1"><i>Watch</i></span> & </p><br><p id="hp3"><span id="hs2"><i>collections</span></i></p>
+        <p id="ourid">Our job is to filling your tummy with delicious watch and with fast and free delivery </p>
+        <button id="getstartedid">Get Started</button>
+        <i class="fa-solid fa-play icon2"></i><p id="Watchp">Watch Video</p>
+      </div>
+      <div class="rigthside">
+        <img id="heroimg" src="assets/rolex.jpeg" alt="Hero" />
+      </div>
+    </section>
+
+    
+
+    <center><h2 id="bestcategoryh2">Best <span id="deliverspan">Delivered</span> <br>Assets</br></h2></center>
+    <!--<button id="sort-categories-btn" ng-click="toggleCategorySort(reverseSort, categories)">
+      <i class="fas fa-sort-alpha-down" ng-show="!reverseSort"></i>
+      <i class="fas fa-sort-alpha-up" ng-show="reverseSort"></i>
+    </button>-->
+      <section id="Categories">
+      <div class="category-list">
+        <div class="category-item" ng-repeat="category in categories" ng-click="filterByCategory(category)">
+          <img class="CatImg" src="assets/{{category}}.jpg" alt="{{category}}" />
+          <p>{{category}}</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="watch-items">
+      
+    <button id="sort-categories-btn" ng-click="toggleCategorySort(reverseSort, categories)">
+      <i class="fas fa-sort-alpha-down" ng-show="!reverseSort"></i>
+      <i class="fas fa-sort-alpha-up" ng-show="reverseSort"></i>
+    </button>
+      <div class="watch-container">
+        <div class="watch-card" ng-repeat="watch in filteredwatches" ng-click="viewwatchDetails(watch._id)">
+          <img class="watch-image" ng-src="{{watch.image}}" alt="{{watch.name}}" />
+          <h3>{{watch.name}}</h3>
+          <p>{{watch.description}}</p>
+          <p class="watch-category">{{watch.category}}</p>
+          <p class="watch-price">₹ {{watch.price}}</p>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section id="newslEtter">
+      <!-- Newsletter Section -->
+      <div class="newsletter">
+        <div class="newsletterdiscription">
+          <h2 id="newsletterh2">Subscribe <br>To Our <span id="newsletterspan">Newsletter</span></h2>
+          <p id="newsletterp">Get weekly updates on the newest design stories , case studies, and tips right in your mailbox.</p>
+          <input type="email" id="newsletteremail" placeholder="Enter your email address" required />
+          <button id="newsletterbutton">Subscribe</button>
+        </div>
+        <div class="newslatterimg">
+          <img id="newslatterimg" src="assets/newslattermail.jpg" alt="Newsletter"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <!-- Footer Section -->
+      <div class="footer1">
+        <!--<img src="./assets/logo.png" alt="premiumWatchStore_LogoImgFooter" id="LogoImgFooter">-->
+        <h3 id="websiteid">Premium Watch Store</h3>
+        <p id="website_desc">Hiranandani Building , 3rd floor, near powai lake, 
+          Mumbai - 400 093, Maharashtra, India.</p>
+      </div>
+      <div class="footer2">
+        <h3 id="footerh3">Quick Links</h3>
+        <p class="footerh3p">SHOP</p>
+        <p class="footerh3p">PRODUCTS</p>
+        <p class="footerh3p">SERVICES</p>
+        <p class="footerh3p">BRANDS</p>
+        <p class="footerh3p">WHO WE ARE</p>
+        <p class="footerh3p">CONTACT US</p>
+        <p class="footerh3p">BROCHURE</p>
+        <p class="footerh3p">SITEMAP</p>
+      </div>
+      <div class="footer3">
+        <h3 id="Footerh3">Contact Us</h3>
+        <p class="footerh2p"><b>Email:</b> support@premiumwatchstore.com</p>
+        <p class="footerh2p"><b>Telephone:</b> +1 234 567 890</p>
+      </div>
+      <div class="footer4">
+        <i class="fa-brands fa-facebook-f fb"></i>
+        <i class="fa-brands fa-instagram ig"></i>
+        <i class="fa-brands fa-whatsapp wp"></i>
+        <i class="fa-brands fa-youtube yt"></i>
+        <i class="fa-brands fa-linkedin ld"></i>
+      </div>
+      <div class="footer5">
+        <p id="footer5p">Privacy Policy | Terms & Conditions | Disclaimers</p>
+        <p id="copyright">Copyright © 2025 MaxDROV Solutions | Watch India Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>

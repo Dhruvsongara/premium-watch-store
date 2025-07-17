@@ -1,0 +1,388 @@
+/* Font and Base Reset */
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  background: black;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+/* Navbar Section */
+
+nav {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #logo2 {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#Website_Name {
+  position: relative;
+  right: 135px;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 70px;
+  position: relative;
+  right: -1px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.icon1 {
+  font-size: 30px;
+  position: relative;
+  right: -130px;
+  color: green;
+}
+
+.icon1:hover {
+  color: green;
+  cursor: pointer;
+}
+
+#signinid {
+  border: none;
+  background-color: rgb(1, 158, 1);
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 16px;
+  position: relative;
+  bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  display: inline-block;
+}
+
+#signinid:hover {
+  background-color: green;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+#signinid:active {
+  background-color: green;
+  transform: translateY(0);
+}
+
+/* Contact Page Container */
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  right: 15px;
+}
+
+.contacth1 {
+  font-size: 2.5rem;
+  color: white; /* Green Color */
+  margin-bottom: 20px;
+  position: relative;
+  right: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Contact Info Section */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.info-item {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.info-item i {
+  font-size: 2rem;
+  color: #2b7a3a; /* Green */
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+  display: grid;
+  gap: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+  position: relative;
+  left: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #2b7a3a; /* Green */
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1e5e3a; /* Darker Green */
+}
+
+/* Footer Section */
+
+#logo2Footer {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
+.foOTer {
+  position: relative;
+  top: 10px;
+}
+
+#websiteid {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  bottom: 52px;
+  left: 80px;
+  cursor: pointer;
+}
+
+#website_desc {
+  width: 380px;
+  opacity: 0.8;
+  font-size: 17px;
+  position: relative;
+  bottom: 20px;
+}
+
+#premiumwatchstorespanfooter {
+  color: green;
+  font-weight: bold;
+}
+
+.footER1 {
+  position: relative;
+  left: 50px;
+  top: 162px;
+}
+
+.footer2 {
+  position: relative;
+  left: 610px;
+  bottom: 50px;
+}
+
+#footerh3 {
+  color: white;
+}
+
+.footerh3p {
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  left: -7px;
+}
+
+.footerh3p:hover {
+  color: white;
+}
+
+#Footerh3 {
+  color: white;
+}
+
+.footer3 {
+  position: relative;
+  bottom: 361px;
+  left: 900px;
+}
+
+.footerh2p {
+  margin: 10px;
+  position: relative;
+  left: -8px;
+  cursor: pointer;
+}
+
+.footerh2p:hover {
+  color: white;
+}
+.fb {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.fb:hover {
+  background-color: #1877f2; /* Facebook Blue */
+  color: white;
+}
+
+.ig {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.ig:hover {
+  background-color: #e4405f; /* Instagram Gradient Pink */
+  color: white;
+}
+
+.wp {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.wp:hover {
+  background-color: #25d366; /* WhatsApp Green */
+  color: white;
+}
+
+.yt {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.yt:hover {
+  background-color: #ff0000; /* YouTube Red */
+  color: white;
+}
+
+.ld {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.ld:hover {
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: white;
+}
+
+.footer4 {
+  position: relative;
+  left: 900px;
+  bottom: 340px;
+}
+
+#footer5p {
+  position: relative;
+  bottom: 120px;
+  left: 50px;
+  cursor: pointer;
+}
+
+#copyrighT {
+  position: absolute;
+  bottom: 93px;
+  left: 650px;
+}

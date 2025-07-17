@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  background: url("https://source.unsplash.com/1600x900/?watch,restaurant")
+    no-repeat center center/cover;
+  background-color: black;
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.signin-left {
+  width: 40%;
+  background: black;
+  padding: 50px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+
+}
+
+.signin-left h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.input-group {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#inputname{
+  background-color: white;
+}
+.input-group input:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #219150;
+}
+
+.link {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
