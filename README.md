@@ -4,6 +4,12 @@ A modern, full-stack watch delivery web application featuring AngularJS frontend
 
 ---
 
+### 💬 Screenshots
+![Home page](./homepage.png)
+![watch page](./watchpage.png)
+
+---
+
 ## 📦 Step 1: Download the Project
 
 Download the zipped project folder: premium_watch_store_zipped.zip
